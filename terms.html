@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Achievement Goblin</title>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --text: #262220;
+    --muted: #6b625c;
+    --accent: #8a4baf;
+    --card: #ffffff;
+    --border: #e7e1da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1815;
+      --text: #f1ede8;
+      --muted: #ab9f96;
+      --accent: #c497e8;
+      --card: #24211d;
+      --border: #38332c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  nav.crumbs {
+    margin-top: 16px;
+    font-size: 0.9rem;
+  }
+  nav.crumbs a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  nav.crumbs a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 1.25rem;
+    margin: 40px 0 12px;
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin: 24px 0 8px;
+  }
+  p, li { color: var(--text); }
+  ul, ol { padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .note {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: 20px 0;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">Legal</p>
+    <h1>Terms of Service</h1>
+    <p class="meta">Achievement Goblin — Discord Bot<br>Effective date: August 23, 2026</p>
+    <nav class="crumbs"><a href="index.html">← Back</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></nav>
+  </header>
+
+  <p>These Terms of Service ("Terms") govern your access to and use of Achievement Goblin (the "Bot"), a Discord bot that detects the game you are playing on Steam, shows which Steam achievements you are missing, and offers optional social features such as progress tracking, comparisons, and server leaderboards. Throughout these Terms, "Operator," "we," or "us" refers to the individual who develops and runs the Bot; "you" refers to anyone who uses the Bot, whether directly or by being present in a Discord server where it is active.</p>
+
+  <p>By adding the Bot to a server, linking a Steam account to it, or otherwise interacting with it (including its commands, buttons, or direct messages), you agree to these Terms. If you do not agree, do not use the Bot.</p>
+
+  <h2>1. What the Bot Does</h2>
+  <p>The Bot connects to Discord and, separately, to Valve's public Steam Web API. When it detects (via Discord's presence information or your own commands) that you are playing a game, it can look up that game's achievement list from Steam and tell you which achievements you're missing, track your overall completion progress, compare progress with other users who have also linked an account, and — where enabled by a server — show an opt-in leaderboard of members' completion percentages.</p>
+  <p>The Bot is an independent tool. It is not developed, endorsed, or operated by Discord Inc. or by Valve Corporation, and it has no official relationship with either company.</p>
+
+  <h2>2. Eligibility</h2>
+  <p>You must meet Discord's own minimum age requirement and be permitted under Discord's Terms of Service to use Discord in your jurisdiction. By using the Bot you confirm that you meet these requirements.</p>
+
+  <h2>3. Linking a Steam Account</h2>
+  <p>To use most features, you provide your own SteamID64 to the Bot via a link command. For the Bot to retrieve your achievement data, your Steam profile's "Game details" setting generally needs to be set to public, and your Steam status generally needs to not be set to "Invisible" (Steam does not expose current-game data for invisible users). You are responsible for the visibility settings on your own Steam account and for understanding that making game details public may expose that information to anyone with your SteamID, independent of the Bot.</p>
+  <p>You may only link a Steam account that you own or that you have the account holder's permission to link.</p>
+
+  <h2>4. Acceptable Use</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Use the Bot to violate Discord's Terms of Service, Community Guidelines, or Valve's Steam Subscriber Agreement;</li>
+    <li>Attempt to abuse, overload, scrape, or reverse-engineer the Bot or the services it depends on beyond ordinary use;</li>
+    <li>Use the Bot to harass, impersonate, or misrepresent achievement progress belonging to another person without their consent (for example, linking a Steam account you don't have permission to link);</li>
+    <li>Use the Bot for any unlawful purpose.</li>
+  </ul>
+
+  <h2>5. Optional & Social Features</h2>
+  <p>Features such as friend comparisons and server leaderboards only include a user's data if that user has the relevant setting enabled (available via the Bot's settings command) and, for comparisons, only when the other user involved has left comparisons enabled for themselves. You can change these preferences at any time.</p>
+
+  <h2>6. Service Availability</h2>
+  <p>The Bot is currently operated by a single individual, not a company, and is provided on a best-effort basis. We do not guarantee that the Bot will be available at all times, that it will be free of errors, or that achievement data retrieved from Steam will always be accurate or current — accuracy depends on Valve's own systems and on your Steam privacy settings. We may modify, suspend, or discontinue the Bot, in whole or in part, at any time, with or without notice.</p>
+
+  <h2>7. Third-Party Services</h2>
+  <p>Your use of Discord is governed by <a href="https://discord.com/terms" target="_blank" rel="noopener">Discord's Terms of Service</a> and <a href="https://discord.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. Achievement and game data is sourced from Valve's Steam Web API and is subject to Valve's own terms. We are not responsible for the availability, accuracy, or practices of these third-party services.</p>
+
+  <h2>8. Disclaimer of Warranties</h2>
+  <p>The Bot is provided "as is" and "as available," without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that achievement data, progress calculations, or comparisons will be complete or error-free.</p>
+
+  <h2>9. Limitation of Liability</h2>
+  <p>To the fullest extent permitted by law, the Operator will not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of data, arising out of or related to your use of, or inability to use, the Bot, even if advised of the possibility of such damages. Because the Bot is offered free of charge, our total liability for any claim relating to the Bot is limited to the amount (if any) you paid to use it.</p>
+
+  <h2>10. Data & Privacy</h2>
+  <p>Our <a href="privacy.html">Privacy Policy</a> explains what information the Bot collects, how it is used, and how you can request its deletion. It is incorporated into these Terms by reference.</p>
+
+  <h2>11. Termination</h2>
+  <p>You may stop using the Bot at any time by removing it from a server, revoking its access to your Discord account, or simply no longer interacting with it. We may restrict or terminate a user's or server's access to the Bot at our discretion, including for violations of these Terms.</p>
+
+  <h2>12. Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. Material changes will be reflected by updating the effective date above. Continuing to use the Bot after changes take effect constitutes acceptance of the revised Terms.</p>
+
+  <div class="note">These Terms are provided in plain language for a small, independently run Discord bot and are not a substitute for tailored legal advice. If the Bot grows to handle significantly more users or data, the Operator should have these reviewed by a qualified professional.</div>
+
+  <h2>13. Governing Law</h2>
+  <p>These Terms are governed by the laws applicable in the Operator's place of residence, without regard to conflict-of-law principles, except where mandatory local consumer-protection law provides otherwise.</p>
+
+  <h2>14. Contact</h2>
+  <p>Questions about these Terms can be sent to <a href="mailto:ugonek+goblin@gmail.com">ugonek+goblin@gmail.com</a>.</p>
+
+  <footer>
+    Achievement Goblin — Terms of Service · Effective August 23, 2026
+  </footer>
+</div>
+</body>
+</html>
