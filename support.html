@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support Achievement Goblin</title>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --text: #262220;
+    --muted: #6b625c;
+    --accent: #8a4baf;
+    --card: #ffffff;
+    --border: #e7e1da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1815;
+      --text: #f1ede8;
+      --muted: #ab9f96;
+      --accent: #c497e8;
+      --card: #24211d;
+      --border: #38332c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  nav.crumbs {
+    margin-top: 16px;
+    font-size: 0.9rem;
+  }
+  nav.crumbs a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  nav.crumbs a:hover { text-decoration: underline; }
+  p { color: var(--text); }
+  a { color: var(--accent); }
+  .cta {
+    display: block;
+    text-align: center;
+    margin: 32px 0;
+    padding: 20px 24px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--card);
+    text-decoration: none;
+    transition: border-color 0.15s ease;
+  }
+  .cta:hover { border-color: var(--accent); }
+  .cta .emoji {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .cta .label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .cta .sub {
+    display: block;
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin-top: 4px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 32px 0 8px;
+  }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  .note {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 24px 0;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">Support</p>
+    <h1>Support Achievement Goblin</h1>
+    <p class="meta">The bot is free and always will be — this page is entirely optional.</p>
+    <nav class="crumbs"><a href="index.html">← Back</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <p>Achievement Goblin doesn't run ads, doesn't sell data, and doesn't lock any feature behind a paywall — everything it does is free for everyone, in every server. If it's saved you time hunting down achievements and you'd like to help cover the time that goes into building and maintaining it, a one-time tip is welcome and genuinely appreciated. Nothing changes for you either way.</p>
+
+  <!-- TODO: replace with your real Ko-fi page URL once it's set up -->
+  <a class="cta" href="https://ko-fi.com/YOUR_USERNAME" target="_blank" rel="noopener">
+    <span class="emoji">☕</span>
+    <span class="label">Buy me a coffee on Ko-fi</span>
+    <span class="sub">One-time tips, no account or subscription required</span>
+  </a>
+
+  <h2>Where it goes</h2>
+  <p>Tips help cover the small ongoing costs of running the bot and the time spent adding new features, tracking down curated achievement tips, and keeping things working as Steam and Discord change their APIs.</p>
+
+  <h2>Other ways to help</h2>
+  <ul>
+    <li>Use <code>/wanted-games</code>-adjacent flows in the bot — clicking "Request tracking for this game" tells the developer which games are worth prioritizing next, at no cost to you.</li>
+    <li>Report bugs or oddities you run into — feedback is as valuable as a tip.</li>
+    <li>Tell a friend who'd find it useful.</li>
+  </ul>
+
+  <div class="note">Tipping is entirely voluntary and does not unlock any feature, priority support, or special treatment — every user gets the same bot either way. See the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a> for how the bot itself works.</div>
+
+  <footer>
+    Achievement Goblin — Support · Tips are optional and non-refundable once processed by the payment provider.
+  </footer>
+</div>
+</body>
+</html>
